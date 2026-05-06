@@ -10,5 +10,10 @@ class Book:
     @classmethod
     def change_library_new(cls, new_name):
         cls.library_name = new_name
-        
-        
+
+    @staticmethod
+    def is_valid_title(title):
+        if(len(title.strip()) == 0):
+            return True
+        else:
+            return False
