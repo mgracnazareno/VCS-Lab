@@ -17,8 +17,14 @@ print(f" {book2.author}")
 print(f"{book2.available}")
 
 
+print(f"\n -- Book Status  Borrowed --")
 book1.borrow()
 book2.borrow()
 
+print(f"\n -- Book Status  Returned--")
 book1.return_book()
 book2.return_book()
+print("\n-- Book Info --")
+book1.display_info()
+print()
+book2.display_info()
