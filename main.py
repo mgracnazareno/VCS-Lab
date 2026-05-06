@@ -33,3 +33,12 @@ print()
 book3 = Book.from_string("El Filibusterismo | Jose Rizal | True")
 book3.display_info()
 
+print(f"\nStatic method")
+print(Book.is_valid_title(book1.title))
+
+print(f"--- \nChange library name --")
+print(f"Current library: {Book.library_name}")
+Book.change_library_name("Vanier Library")
+print(f"New name: {Book.library_name}")
+
+

@@ -10,7 +10,7 @@ class Book:
     
     
     @classmethod
-    def change_library_new(cls, new_name):
+    def change_library_name(cls, new_name):
         cls.library_name = new_name
 
     @staticmethod
@@ -42,7 +42,7 @@ class Book:
     
     def display_info(self):
         # print(f"[{self.library_name}] {self.title} by {self.author} - Available {self.available}")
-        print(f"Title: {self.title} availability: {self.available}")
+        print(f"Title: {self.title} ")
         print(f"Author: {self.title}")
         print(f"Availability: {self.available}")
         # print(f"Availability: {self.available}")
