@@ -1,13 +1,17 @@
 
 class Book:
     library_name = "Central Library"
+    count = 0
 
     def __init__(self, title, author, available):
         self.title = title
         self.author = author
         self.available = True
+        Book.count += 1
     
-    
+    @classmethod
+    def show_count(cls):
+        print(f"Total books: {cls.count}")
     
     @classmethod
     def change_library_name(cls, new_name):

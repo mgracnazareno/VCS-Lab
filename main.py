@@ -41,4 +41,8 @@ print(f"Current library: {Book.library_name}")
 Book.change_library_name("Vanier Library")
 print(f"New name: {Book.library_name}")
 
+print("\n--Book Count --")
+Book.show_count()
+print(Book.count)
+
 
