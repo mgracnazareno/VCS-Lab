@@ -7,7 +7,6 @@ class Book:
         self.author = author
         self.available = True
     
-<<<<<<< HEAD
     
     
     @classmethod
@@ -20,7 +19,7 @@ class Book:
             return True
         else:
             return False
-=======
+        
     # instance methods
     def borrow(self):
         if(self.available == True):
@@ -37,6 +36,8 @@ class Book:
             print(f"{self.title} is not borrowed")
     
     def display_info(self):
-        print(f"{self.title} availability: {self.available}")
+        # print(f"Title: {self.title} availability: {self.available}")
+        print(f"Title: {self.title}")
+        print(f"Author: {self.author}")
+        print(f"Availability: {self.available}")
         
->>>>>>> features/instance-methods
