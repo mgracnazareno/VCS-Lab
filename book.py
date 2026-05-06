@@ -9,6 +9,7 @@ class Book:
     
 <<<<<<< HEAD
     
+    
     @classmethod
     def change_library_new(cls, new_name):
         cls.library_name = new_name
