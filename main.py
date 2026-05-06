@@ -29,3 +29,7 @@ book1.display_info()
 print()
 book2.display_info()
 
+print()
+book3 = Book.from_string("El Filibusterismo | Jose Rizal | True")
+book3.display_info()
+

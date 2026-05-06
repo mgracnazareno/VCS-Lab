@@ -34,10 +34,16 @@ class Book:
             print(f"{self.title} has been returned.")
         else:
             print(f"{self.title} is not borrowed")
+
+    @classmethod
+    def from_string(cls, data):
+        title, author, available = data.split(" | ")
+        return cls(title, author , available)
     
     def display_info(self):
-        # print(f"Title: {self.title} availability: {self.available}")
-        print(f"Title: {self.title}")
-        print(f"Author: {self.author}")
+        # print(f"[{self.library_name}] {self.title} by {self.author} - Available {self.available}")
+        print(f"Title: {self.title} availability: {self.available}")
+        print(f"Author: {self.title}")
         print(f"Availability: {self.available}")
+        # print(f"Availability: {self.available}")
         
