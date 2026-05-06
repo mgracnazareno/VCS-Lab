@@ -41,7 +41,7 @@ class Book:
 
     @classmethod
     def from_string(cls, data):
-        title, author, available = data.split(" | ")
+        title, author, available = data.split(",")
         return cls(title, author , available)
     
     def display_info(self):
