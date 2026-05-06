@@ -2,8 +2,8 @@ from book import Book
 
 
 # create at least 2 book objects
-book1 = Book("Python Programming", "Tony Gaddis", False)
-book2 = Book("Verite", "Colleen Hover", True)
+book1 = Book("Python Programming", "Tony Gaddis", False, "Technology")
+book2 = Book("Verite", "Colleen Hover", True, "Psychological")
 
 #print attribute values
 print(f"-- Book 1 --")
@@ -30,7 +30,7 @@ print()
 book2.display_info()
 
 print()
-book3 = Book.from_string("El Filibusterismo | Jose Rizal | True")
+book3 = Book.from_string("El Filibusterismo, Jose Rizal, True, Patriotism" )
 book3.display_info()
 
 print(f"\nStatic method")
