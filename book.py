@@ -7,7 +7,6 @@ class Book:
         self.author = author
         self.available = True
     
-    def 
     
     @classmethod
     def change_library_new(cls, new_name):
